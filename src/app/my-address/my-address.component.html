@@ -1,35 +1,70 @@
-<form>
+
+<div class="row">
+
+  <div class="col">
+      <form>
 
  
-  <div class="form-group">
-      <label for="addressName">Address Name:</label>
-      <input type="text" class="form-control"  formControlName="addressName" id="addressName"> 
-  </div>
-  <div class="form-group">
-      <label for="street">Street:</label>
-      <input type="text" class="form-control"  formControlName="street" id="street"> 
+          <div class="form-group">
+              <label for="addressName">Address Name:</label>
+              <input type="text" class="form-control"  formControlName="addressName" id="addressName"> 
+          </div>
+          <div class="form-group">
+              <label for="street">Street:</label>
+              <input type="text" class="form-control"  formControlName="street" id="street"> 
+          </div>
+        
+          <div class="form-group">
+              <label for="apartmentNumber">Number of Apartment:</label>
+              <input type="text" class="form-control"  formControlName="apartmentNumber" id="apartmentNumber"> 
+          </div>
+        
+          <div class="form-group">
+              <label for="area">Area:</label>
+              <input type="text" class="form-control"  formControlName="area" id="area"> 
+          </div>
+        
+          <div class="form-group">
+              <label for="postCode">Post code:</label>
+              <input type="text" class="form-control"  formControlName="postCode" id="postCode"> 
+          </div>
+        
+          <div class="form-group">
+              <label for="authorizedPerson">Authorized Person:</label>
+              <input type="text" class="form-control"  formControlName="authorizedPerson" id="authorizedPerson"> 
+          </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        
+        
+        </form>
   </div>
 
-  <div class="form-group">
-      <label for="apartmentNumber">Number of Apartment:</label>
-      <input type="text" class="form-control"  formControlName="apartmentNumber" id="apartmentNumber"> 
+  <div class="col">
+      <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">List group item heading</h5>
+              <small>3 days ago</small>
+            </div>
+            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+            <small>Donec id elit non mi porta.</small>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">List group item heading</h5>
+              <small class="text-muted">3 days ago</small>
+            </div>
+            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+            <small class="text-muted">Donec id elit non mi porta.</small>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">List group item heading</h5>
+              <small class="text-muted">3 days ago</small>
+            </div>
+            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+            <small class="text-muted">Donec id elit non mi porta.</small>
+          </a>
+        </div>
   </div>
-
-  <div class="form-group">
-      <label for="area">Area:</label>
-      <input type="text" class="form-control"  formControlName="area" id="area"> 
-  </div>
-
-  <div class="form-group">
-      <label for="postCode">Post code:</label>
-      <input type="text" class="form-control"  formControlName="postCode" id="postCode"> 
-  </div>
-
-  <div class="form-group">
-      <label for="authorizedPerson">Authorized Person:</label>
-      <input type="text" class="form-control"  formControlName="authorizedPerson" id="authorizedPerson"> 
-  </div>
-    <button type="submit" class="btn btn-default">Submit</button>
-
-
-</form>
+</div>
