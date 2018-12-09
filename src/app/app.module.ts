@@ -9,6 +9,7 @@ import { MyAddressComponent } from './my-address/my-address.component';
 //ngxs 
 import { NgxsModule } from '@ngxs/store';
 import { NgxsFormPluginModule } from '@ngxs/form-plugin';
+import { MyAddressState } from './store/states/my-address.state';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { NgxsFormPluginModule } from '@ngxs/form-plugin';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxsModule.forRoot([]),
+    NgxsModule.forRoot([MyAddressState]),
     NgxsFormPluginModule.forRoot(),
   ],
   providers: [],
