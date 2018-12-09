@@ -4,5 +4,5 @@ export interface Address{
     apartmentNumber:number;
     area:string;
     postCode:string;
-    person:string;
+    authorizedPerson:string;
 }
