@@ -1,5 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<div style="text-align:left">
   <h1>
     Welcome to {{ title }}!
   </h1>
@@ -13,17 +13,32 @@
     Question is; How do we keep multiple tabs sync?
 
     With ngxs, localstorage and rxjs its possible.
-
-    How;
+<br />
+    Tool;
 
   </p>
   <ul>
 
     <li><strong>Ngxs</strong> for state management (Best state management library + pattern for Angular projects)</li>
     <li><strong>localStorage</strong> for keeping actions</li>
-    <li>Rxjs for detecting changes on window.storage with <strong>fromEvent</strong>> operator</li>
+    <li>Rxjs for detecting changes on window.storage with <strong>fromEvent</strong> operator</li>
 
   </ul>
+
+  <p>Steps;</p>
+    <ol>
+      <li>We're going to build some delightful form with ngxsForm</li>
+      <li>We re going to save our ACTION to localstorage</li>
+      <li>Listen to window.storage event with fromEvent operator</li>
+    </ol>
+
+    <p>
+      Result;
+    </p>
+    <ol>
+      <li>We can keep sync multiple tabs. We will change data in one tab, and another tab will update automatically.</li>
+    </ol>
+
 </div>
 
 
