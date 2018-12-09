@@ -5,6 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MyAddressComponent } from './my-address/my-address.component';
 
+
+//ngxs 
+import { NgxsModule } from '@ngxs/store';
+import { NgxsFormPluginModule } from '@ngxs/form-plugin';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -12,7 +17,9 @@ import { MyAddressComponent } from './my-address/my-address.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxsModule.forRoot([]),
+    NgxsFormPluginModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
