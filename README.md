@@ -1,4 +1,4 @@
-# ngxs-keep-browser-tab-sync
+# Keeping Multiple Tab Syncronous with NGXS
 #### Keeping multiple browser tab synchronous with NGXS, localStorage and Rxjs
 
 #### Question is; How do we keep multiple tab in sync?
@@ -12,4 +12,4 @@
 3. **Rxjs** for detecting changes on **window.storage** with **fromEvent** operator
 
 
-*[This project inspired by this document.](https://blog.angularindepth.com/keeping-browser-tabs-in-sync-using-localstorage-ngrx-and-rxjs-87de3bca4e2c)*
+*[This project copying by this document. But NGXS.](https://blog.angularindepth.com/keeping-browser-tabs-in-sync-using-localstorage-ngrx-and-rxjs-87de3bca4e2c)*
