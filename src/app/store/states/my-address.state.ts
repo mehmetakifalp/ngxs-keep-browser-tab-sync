@@ -21,7 +21,8 @@ export class MyAddressStateModel{
       dirty:false,
       status: '',
       errors: {}
-    }]
+    }
+}
 })
 export class MyAddressState{
     constructor(private http: HttpClient){
