@@ -1,6 +1,7 @@
-import { State, Selector } from "@ngxs/store";
+import { State, Selector, Action, StateContext } from "@ngxs/store";
 import { Address } from '../models/address';
-import { HttpClient } from 'selenium-webdriver/http';
+import { MyAddress } from '../actions/my-address.action';
+import { HttpClient } from '@angular/common/http';
 export class MyAddressStateModel{
     address: Address[];
     addresForm: any;
@@ -30,5 +31,10 @@ export class MyAddressState{
     @Selector()
     static getAdress(state: MyAddressStateModel){
       return state.address;
+    }
+
+    @Action(MyAddress)
+    add({getState, patchState}: StateContext<MyAddressStateModel>){
+      const state = getState();
     }
 }
