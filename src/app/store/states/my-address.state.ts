@@ -7,13 +7,13 @@ export class MyAddressStateModel{
 }
 @State<MyAddressStateModel>({
     name:"my-address",
-    defaults:[ address: [{
-        addressName:"";
-        street:"";
-        apartmentNumber:1;
-        area:"";
-        postCode:"";
-        authorizedPerson:"";
+    defaults:{ address: [{
+        addressName:" ",
+        street:"",
+        apartmentNumber:1,
+        area:"",
+        postCode:"",
+        authorizedPerson:"",
     }],
     addresForm: {
       model: undefined,
