@@ -2,8 +2,6 @@
 
 #### Keeping multiple browser tab synchronous with NGXS, localStorage and Rxjs
 
-#### Question is; How do we keep multiple tab in sync?
-
 ### With **NGXS**, **localstorage** and **Rxjs**.
 
 We're going to follow;
