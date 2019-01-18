@@ -7,7 +7,7 @@ export class MyAddressStateModel{
     addresForm: any;
 }
 @State<MyAddressStateModel>({
-    name:"my-address",
+    name:"MyAddressState",
     defaults:{ address: [{
         addressName:" ",
         street:"",
