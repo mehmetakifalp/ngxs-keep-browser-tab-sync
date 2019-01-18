@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { Store } from '@ngxs/store';
+import { Store, Select } from '@ngxs/store';
 import { MyAddress } from '../store/actions/my-address.action';
 import { Address } from '../store/models/address';
 import { ToastAction } from '../store/actions/toast.action';
+import { FormGroup } from '@angular/forms';
+import { MyAddressState } from '../store/states/my-address.state';
 
 @Component({
   selector: 'app-my-address',
@@ -10,6 +12,12 @@ import { ToastAction } from '../store/actions/toast.action';
   styleUrls: ['./my-address.component.css']
 })
 export class MyAddressComponent implements OnInit {
+
+
+  addressForm: FormGroup;
+
+  @Select(MyAddressState.getAdress)
+  address$: any[];
 
   constructor(private store: Store) { }
 
