@@ -16,8 +16,14 @@ export class MyAddressComponent implements OnInit {
 
   addressForm: FormGroup;
 
+  get isAddressFormValid(): boolean {
+    return this.addressForm.status === 'VALID';
+  }
+
   @Select(MyAddressState.getAdress)
   address$: any[];
+
+  
 
   constructor(private store: Store, private fb: FormBuilder) { }
 
@@ -39,6 +45,12 @@ export class MyAddressComponent implements OnInit {
     this.store.dispatch(new MyAddress(data));
     const toastMsg = {"description":"DESCRIIPT","title":"TITLE",code:409}
     this.store.dispatch(new ToastAction(toastMsg));
+  }
+
+  onSubmit(){
+    if (this.isAddressFormValid) {
+      this.store.dispatch(new MyAddress());
+    }
   }
 
 }
