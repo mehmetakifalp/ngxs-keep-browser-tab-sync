@@ -1,11 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { NgxsReduxDevtoolsPluginModule } from '@ngxs/devtools-plugin';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MyAddressComponent } from './my-address/my-address.component';
 
-import { NgxsResetPluginModule } from '../reset/reset.module';
 
 //ngxs 
 import { NgxsModule } from '@ngxs/store';
@@ -23,7 +23,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule, ReactiveFormsModule, NgxsResetPluginModule.forRoot(),
+    FormsModule, ReactiveFormsModule,
     NgxsModule.forRoot([MyAddressState]),
     NgxsReduxDevtoolsPluginModule.forRoot(),
     NgxsFormPluginModule.forRoot(),
