@@ -39,7 +39,8 @@ export class MyAddressState{
     @Action(MyAddress)
     add({getState, patchState}: StateContext<MyAddressStateModel>){
       const state = getState();
-
+      localStorage.setItem("ActionName", "ToastAction");
+      alert(localStorage.getItem("ActionName"));
       this.clearForm('MyAddressState.addressForm', defaults.addresForm.model);
     }
 

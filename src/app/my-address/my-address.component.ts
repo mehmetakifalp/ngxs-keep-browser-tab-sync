@@ -5,6 +5,7 @@ import { Address } from '../store/models/address';
 import { ToastAction } from '../store/actions/toast.action';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { MyAddressState } from '../store/states/my-address.state';
+import { fromEvent } from 'rxjs';
 
 @Component({
   selector: 'app-my-address',
@@ -43,7 +44,10 @@ export class MyAddressComponent implements OnInit {
 
   submit(data: Address){
     this.store.dispatch(new MyAddress(data));
-    debugger;
+    
+
+
+
     const toastMsg = {"description":"DESCRIIPT","title":"TITLE",code:409}
     this.store.dispatch(new ToastAction(toastMsg));
   }
