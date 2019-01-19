@@ -44,12 +44,7 @@ export class MyAddressComponent implements OnInit {
 
   submit(data: Address){
     this.store.dispatch(new MyAddress(data));
-    
 
-
-
-    const toastMsg = {"description":"DESCRIIPT","title":"TITLE",code:409}
-    this.store.dispatch(new ToastAction(toastMsg));
   }
 
   /*
