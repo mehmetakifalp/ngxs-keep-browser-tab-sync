@@ -3,7 +3,7 @@ import { Store, Select } from '@ngxs/store';
 import { MyAddress } from '../store/actions/my-address.action';
 import { Address } from '../store/models/address';
 import { ToastAction } from '../store/actions/toast.action';
-import { FormGroup } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { MyAddressState } from '../store/states/my-address.state';
 
 @Component({
@@ -19,9 +19,19 @@ export class MyAddressComponent implements OnInit {
   @Select(MyAddressState.getAdress)
   address$: any[];
 
-  constructor(private store: Store) { }
+  constructor(private store: Store, private fb: FormBuilder) { }
 
   ngOnInit() {
+
+    this.addressForm = this.fb.group({
+      addressName: ['', Validators.required],
+      street: ['', Validators.required],
+      apartmentNumber: [null, Validators.required],
+      area: ['', Validators.required],
+      postCode: ['', Validators.required],
+      authorizedPerson: ['', Validators.required]
+    })
+
   }
 
 

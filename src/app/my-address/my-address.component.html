@@ -1,7 +1,7 @@
 
 <div class="row">
   <div class="col">
-      <form [formGroup]="addressForm" novalidate ngxsForm="MyAddressState.addressForm" ngxsFormClearOnDestroy="true" >
+      <form [formGroup]="addressForm" novalidate ngxsForm="MyAddressState.addressForm" ngxsFormClearOnDestroy="true" (ngSubmit)="onSubmit()">
           <div class="form-group">
               <label for="addressName">Address Name:</label>
               <input type="text" class="form-control"  formControlName="addressName" id="addressName"> 
@@ -30,7 +30,7 @@
               <label for="authorizedPerson">Authorized Person:</label>
               <input type="text" class="form-control"  formControlName="authorizedPerson" id="authorizedPerson"> 
           </div>
-            <button type="submit" class="btn btn-default">Submit</button>
+            <button type="submit" class="btn btn-default" [disabled]="!isAddressFormValid">Submit</button>
         </form>
   </div>
 
