@@ -32,15 +32,18 @@ export class MyAddressState{
     }
   
     @Selector()
-    static getAdress(state: MyAddressStateModel){
-      return state.address;
+    static myAddress({myAddress}) : MyAddress{
+      return myAddress;
     }
 
+
     @Action(MyAddress)
-    add({getState, patchState}: StateContext<MyAddressStateModel>){
+    add({getState, patchState}: StateContext<MyAddress>, { myAddress }: any){
       const state = getState();
       sessionStorage.setItem("ActionName", "ToastAction");
       console.log(sessionStorage.getItem("ActionName"));
+      patchState({ myAddress });
+      debugger;
       this.clearForm('MyAddressState.addressForm', defaults.addresForm.model);
     }
 

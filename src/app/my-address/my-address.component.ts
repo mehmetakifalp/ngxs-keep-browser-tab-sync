@@ -21,8 +21,8 @@ export class MyAddressComponent implements OnInit {
     return this.addressForm.status === 'VALID';
   }
 
-  @Select(MyAddressState.getAdress)
-  address$: any[];
+  @Select(MyAddressState.myAddress)
+  address$: any;
 
   
 

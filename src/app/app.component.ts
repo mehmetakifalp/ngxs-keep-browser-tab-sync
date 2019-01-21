@@ -24,7 +24,6 @@ export class AppComponent implements OnInit{
 
     source.subscribe(
       data => {
-        console.log(data);
         const toastMsg = {"description":"DESCRIIPT","title":"TITLE",code:409}
         this.store.dispatch(new ToastAction(toastMsg));
       }
