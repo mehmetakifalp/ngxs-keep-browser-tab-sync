@@ -7,10 +7,16 @@ import { AppComponent } from './app.component';
 import { MyAddressComponent } from './my-address/my-address.component';
 
 
+
 //ngxs 
 import { NgxsModule } from '@ngxs/store';
-import { NgxsFormPluginModule } from '@ngxs/form-plugin';
+import { NgxsFormPluginModule } from '@ngxs/form-plugin'
+
+// states
 import { MyAddressState } from './store/states/my-address.state';
+import { LoginState } from './store/states/login.state'
+
+
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
@@ -25,7 +31,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     HttpClientModule,
     FormsModule, ReactiveFormsModule,
-    NgxsModule.forRoot([MyAddressState]),
+    NgxsModule.forRoot([MyAddressState, LoginState]),
     NgxsReduxDevtoolsPluginModule.forRoot(),
     NgxsFormPluginModule.forRoot(),
 
