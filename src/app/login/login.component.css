@@ -40,6 +40,7 @@ span.psw {
 
 /* The Modal (background) */
 .modal {
+  display:block;
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   left: 0;

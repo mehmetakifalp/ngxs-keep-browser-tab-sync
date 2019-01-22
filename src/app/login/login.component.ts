@@ -1,4 +1,4 @@
-import { Component,OnInit } from '@angular/core';
+import { Component,OnInit, ViewEncapsulation } from '@angular/core';
 import { Observable, fromEvent} from 'rxjs';
 import {debounceTime, delay} from 'rxjs/operators';
 import { Select, Store } from '@ngxs/store';
@@ -10,7 +10,8 @@ enum STATUS{
 @Component({
   selector: 'app-my-login',
   templateUrl: './login.component.html',
-  styleUrls: [ './login.component.css' ]
+  styleUrls: [ './login.component.css' ],
+  encapsulation: ViewEncapsulation.None
 })
 export class LoginComponent implements OnInit {
 
