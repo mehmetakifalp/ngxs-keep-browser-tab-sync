@@ -1,5 +1,5 @@
 import { Injectable } from "@angular/core";
-import { Observable } from 'rxjs';
+import { Observable, of, from } from 'rxjs';
 
 @Injectable({
     providedIn: 'root'
@@ -12,8 +12,8 @@ export class AuthService{
 
     }
 
-    setToken(token: string) : Observable<string>{
-        return;
+    setToken(token: string) : Observable<any>{
+        return localStorage.setItem("token", token);
     }
 
     remoteToken(){
