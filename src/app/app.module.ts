@@ -19,12 +19,14 @@ import { LoginState } from './store/states/login.state'
 
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    MyAddressComponent
+    MyAddressComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

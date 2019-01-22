@@ -1,0 +1,37 @@
+
+
+<div id="id01" class="modal" *ngIf="status==='LOGIN'">
+  
+    <form class="modal-content animate" action="/action_page.php">
+      <div class="imgcontainer">
+        <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar">
+      </div>
+  
+      <div class="container">
+        <button (click)="dispatcher('LOGIN')"  type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+  
+    </form>
+  </div>
+  
+  
+  <div class="modal" *ngIf="status==='LOGOUT'">
+    
+    <div class="modal-content animate">
+      <div class="container">
+        <label>Welcome, <b> logout now </b></label>
+        <button (click)="dispatcher('LOGOUT')" type="submit">Logout</button>
+      </div>
+  
+    </div>
+  </div>
+  
+  
+    
+  
+  
+  
+  
