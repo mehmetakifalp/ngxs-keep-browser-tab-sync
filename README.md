@@ -1,5 +1,10 @@
 # Keeping Multiple Tab Syncronous with NGXS
 
+**Medium Post About This Repo**
+*[Keeping Multiple Tab In Sync using NGXS state management library, Rxjs and localStorage
+.](https://medium.com/@mehmetakifalp/keeping-multiple-tab-in-sync-using-ngxs-state-management-library-rxjs-and-localstorage-840c0bf615fa)*
+
+
 #### Keeping multiple browser tab synchronous with NGXS, localStorage and Rxjs
 
 ### With **NGXS**, **localstorage** and **Rxjs**.
@@ -16,5 +21,3 @@ Task List;
 - [x] Implement RXJS and usage of rxjs operators
 
 **contact me at : mehmetakifalp@gmail.com**
-
-*[This project copying by this document. But NGXS.](https://blog.angularindepth.com/keeping-browser-tabs-in-sync-using-localstorage-ngrx-and-rxjs-87de3bca4e2c)*
