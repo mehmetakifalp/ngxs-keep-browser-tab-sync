@@ -13,7 +13,7 @@ We're going to follow;
 
 Task List;
 - [x] Implement NGXS and NGXS Form
-- [ ] Implement RXJS and usage of rxjs operators
+- [x] Implement RXJS and usage of rxjs operators
 
 **contact me at : mehmetakifalp@gmail.com**
 
