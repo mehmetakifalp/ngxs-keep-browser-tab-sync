@@ -43,7 +43,6 @@ export class MyAddressState{
       sessionStorage.setItem("ActionName", "ToastAction");
       console.log(sessionStorage.getItem("ActionName"));
       patchState({ myAddress });
-      debugger;
       this.clearForm('MyAddressState.addressForm', defaults.addresForm.model);
     }
 
